@@ -203,6 +203,7 @@ $(eval $(call GstBuildLibrary,photography,photography,,))
 $(eval $(call GstBuildLibrary,basecamerabinsrc,basecamerabinsrc,app,))
 $(eval $(call GstBuildLibrary,uridownloader,uridownloader,,))
 $(eval $(call GstBuildLibrary,badbase,badbase,,))
+$(eval $(call GstBuildLibrary,codecparsers,codecparsers,,))
 
 # 1: short name
 # 2: description
@@ -272,6 +273,7 @@ $(eval $(call GstBuildPlugin,siren,siren support,audio rtp,,))
 $(eval $(call GstBuildPlugin,speed,speed support,audio,,))
 $(eval $(call GstBuildPlugin,subenc,subenc support,controller,,))
 #$(eval $(call GstBuildPlugin,srtp,srtp support,rtp,,+libsrtp))
+$(eval $(call GstBuildPlugin,videoparsersbad,video format parsers,video pbutils codecparsers,,))
 
 $(eval $(call BuildPackage,gstreamer1-plugins-bad))
 $(eval $(call BuildPackage,gst1-plugins-bad))
